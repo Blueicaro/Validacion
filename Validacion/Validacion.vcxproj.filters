@@ -47,6 +47,9 @@
     <ClInclude Include="ColeccionClientesV01.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Listado.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -77,6 +80,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ColeccionClientesV01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Listado.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

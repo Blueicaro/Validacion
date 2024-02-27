@@ -4,6 +4,9 @@
 #include "ClientesEspecificacionV02.h"
 #include "IColeccionClientes.h"
 #include "ColeccionClientesV01.h"
+#include "Listado.h"
+
+
 
 namespace CppCLRWinFormsProject {
 
@@ -13,6 +16,7 @@ namespace CppCLRWinFormsProject {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace Validacion;
 
 	/// <summary>
 	/// Summary for Form1
@@ -21,7 +25,8 @@ namespace CppCLRWinFormsProject {
 	{
 	private:
 		IClienteEspecificacion^ Validador;
-		IColeccionClientes^ Coleccion;
+	private: System::Windows::Forms::Button^ buttonListado;
+		   IColeccionClientes^ Coleccion;
 	public:
 		Form1(void)
 		{
@@ -108,6 +113,7 @@ namespace CppCLRWinFormsProject {
 			this->labelNumeroClientes = (gcnew System::Windows::Forms::Label());
 			this->groupBoxClientes = (gcnew System::Windows::Forms::GroupBox());
 			this->listBoxNombreCliente = (gcnew System::Windows::Forms::ListBox());
+			this->buttonListado = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownPeso))->BeginInit();
 			this->groupBoxErrores->SuspendLayout();
 			this->groupBoxResumen->SuspendLayout();
@@ -304,11 +310,22 @@ namespace CppCLRWinFormsProject {
 			this->listBoxNombreCliente->Size = System::Drawing::Size(372, 124);
 			this->listBoxNombreCliente->TabIndex = 0;
 			// 
+			// buttonListado
+			// 
+			this->buttonListado->Location = System::Drawing::Point(421, 126);
+			this->buttonListado->Name = L"buttonListado";
+			this->buttonListado->Size = System::Drawing::Size(75, 23);
+			this->buttonListado->TabIndex = 17;
+			this->buttonListado->Text = L"Listado";
+			this->buttonListado->UseVisualStyleBackColor = true;
+			this->buttonListado->Click += gcnew System::EventHandler(this, &Form1::buttonListado_Click);
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(993, 396);
+			this->Controls->Add(this->buttonListado);
 			this->Controls->Add(this->groupBoxClientes);
 			this->Controls->Add(this->groupBoxResumen);
 			this->Controls->Add(this->groupBoxErrores);
@@ -381,6 +398,11 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		
 }
 private: System::Void textBoxNombre_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void buttonListado_Click(System::Object^ sender, System::EventArgs^ e) {
+	Listado^ rgForm = gcnew Listado();
+	rgForm->Show();
+	this->Hide();
 }
 };
 }
