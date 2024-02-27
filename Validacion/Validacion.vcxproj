@@ -132,6 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cliente.h" />
+    <ClInclude Include="ClienteADORepository.h" />
     <ClInclude Include="ClientesEspecificacionV01.h" />
     <ClInclude Include="ClientesEspecificacionV02.h" />
     <ClInclude Include="ColeccionClientesV01.h" />
@@ -139,6 +140,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="IClienteEspecificacion.h" />
+    <ClInclude Include="IClienteRepository.h" />
     <ClInclude Include="IColeccionClientes.h" />
     <ClInclude Include="Listado.h">
       <FileType>CppForm</FileType>
@@ -149,12 +151,14 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Cliente.cpp" />
+    <ClCompile Include="ClienteADORepository.cpp" />
     <ClCompile Include="ClientesEspecificacionV01.cpp" />
     <ClCompile Include="ClientesEspecificacionV02.cpp" />
     <ClCompile Include="ColeccionClientesV01.cpp" />
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="IClienteEspecificacion.cpp" />
+    <ClCompile Include="IClienteRepository.cpp" />
     <ClCompile Include="IColeccionClientes.cpp" />
     <ClCompile Include="Listado.cpp" />
     <ClCompile Include="pch.cpp">

@@ -5,6 +5,8 @@
 #include "IColeccionClientes.h"
 #include "ColeccionClientesV01.h"
 #include "Listado.h"
+#include "IClienteRepository.h"
+#include "ClienteADORepository.h"
 
 
 
@@ -27,6 +29,7 @@ namespace CppCLRWinFormsProject {
 		IClienteEspecificacion^ Validador;
 	private: System::Windows::Forms::Button^ buttonListado;
 		   IColeccionClientes^ Coleccion;
+		   IClienteRepository^ Repositorio;
 	public:
 		Form1(void)
 		{
@@ -359,6 +362,7 @@ namespace CppCLRWinFormsProject {
 		this->textBoxImporte->Text = "0";
 		this->Validador = (gcnew ClientesEspecificacionV02());
 		this->Coleccion = (gcnew ColeccionClientesV01());
+		this->Repositorio = (gcnew ClienteADORepository());
 
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -376,6 +380,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	if (this->Validador->isValid(miCliente))
 	{
 		this->Coleccion->Add(miCliente);
+		this->Repositorio->AddCliente(miCliente);
 		this->labelImporteAcumulado->Text = "Importe Total: "+this->Coleccion->dameImporteTotal();
 		this->labelNumeroClientes->Text = "Numero Clientes: "+this->Coleccion->dameCantidad();
 		this->labelPesoMedio->Text = "Peso Medio: "+this->Coleccion->damePeso();
@@ -383,6 +388,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		for each (String^ var in Coleccion->dameEntradas())
 		{
 			this->listBoxNombreCliente->Items->Add(var);
+
 		}
 	}	
 	else

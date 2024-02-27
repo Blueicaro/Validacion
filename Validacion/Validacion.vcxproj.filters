@@ -50,6 +50,12 @@
     <ClInclude Include="Listado.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IClienteRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClienteADORepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -83,6 +89,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Listado.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IClienteRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClienteADORepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
