@@ -131,6 +131,7 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ADOBaseRepository.h" />
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="ClienteADORepository.h" />
     <ClInclude Include="ClientesEspecificacionV01.h" />
@@ -158,6 +159,7 @@
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ADOBaseRepository.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="ClienteADORepository.cpp" />

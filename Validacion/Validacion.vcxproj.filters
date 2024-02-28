@@ -71,6 +71,9 @@
     <ClInclude Include="MascotaADORepository.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ADOBaseRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -125,6 +128,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MascotaADORespository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ADOBaseRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

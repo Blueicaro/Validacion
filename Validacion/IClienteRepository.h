@@ -8,9 +8,9 @@ using namespace System::Data;
 using namespace System::Drawing;
 using namespace System::Data::SqlClient;
 
-ref class IClienteRepository abstract
+public interface class IClienteRepository 
 {
-	public: virtual void AddCliente(Cliente^ ClienteAPoner) abstract;
-	public: virtual DataTable^ dameLista() abstract;
+	void AddCliente(Cliente^ ClienteAPoner);
+	DataTable^ dameLista();
 };
 

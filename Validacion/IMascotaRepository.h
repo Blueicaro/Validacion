@@ -9,8 +9,8 @@ using namespace System::Data;
 using namespace System::Drawing;
 using namespace System::Data::SqlClient;
 
-ref class IMascotaRepository abstract
+public interface class IMascotaRepository
 {
-public: virtual void AddMascota(Mascota^ MascotaAPoner) abstract;
-public: virtual DataTable^ dameLista() abstract;
+	void AddMascota(Mascota^ MascotaAPoner);
+	DataTable^ dameLista();
 };
