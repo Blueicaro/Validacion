@@ -56,6 +56,21 @@
     <ClInclude Include="ClienteADORepository.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IntroMascotas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListadoMascotas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mascota.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IMascotaRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MascotaADORepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -95,6 +110,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ClienteADORepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroMascotas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListadoMascotas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mascota.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IMascotaRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MascotaADORespository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

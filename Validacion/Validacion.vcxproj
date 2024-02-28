@@ -142,9 +142,18 @@
     <ClInclude Include="IClienteEspecificacion.h" />
     <ClInclude Include="IClienteRepository.h" />
     <ClInclude Include="IColeccionClientes.h" />
+    <ClInclude Include="IMascotaRepository.h" />
+    <ClInclude Include="IntroMascotas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Listado.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="ListadoMascotas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Mascota.h" />
+    <ClInclude Include="MascotaADORepository.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
@@ -160,7 +169,12 @@
     <ClCompile Include="IClienteEspecificacion.cpp" />
     <ClCompile Include="IClienteRepository.cpp" />
     <ClCompile Include="IColeccionClientes.cpp" />
+    <ClCompile Include="IMascotaRepository.cpp" />
+    <ClCompile Include="IntroMascotas.cpp" />
     <ClCompile Include="Listado.cpp" />
+    <ClCompile Include="ListadoMascotas.cpp" />
+    <ClCompile Include="Mascota.cpp" />
+    <ClCompile Include="MascotaADORespository.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -182,8 +196,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IntroMascotas.resx">
+      <DependentUpon>IntroMascotas.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Listado.resx">
       <DependentUpon>Listado.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoMascotas.resx">
+      <DependentUpon>ListadoMascotas.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
