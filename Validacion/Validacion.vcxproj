@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="ADOBaseRepository.h" />
     <ClInclude Include="Cliente.h" />
+    <ClInclude Include="ClienteADODirectoRepository.h" />
     <ClInclude Include="ClienteADORepository.h" />
     <ClInclude Include="ClientesEspecificacionV01.h" />
     <ClInclude Include="ClientesEspecificacionV02.h" />
@@ -155,6 +156,9 @@
     </ClInclude>
     <ClInclude Include="Mascota.h" />
     <ClInclude Include="MascotaADORepository.h" />
+    <ClInclude Include="MenuPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
@@ -162,12 +166,14 @@
     <ClCompile Include="ADOBaseRepository.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Cliente.cpp" />
+    <ClCompile Include="ClienteADODirectoRepository.cpp" />
     <ClCompile Include="ClienteADORepository.cpp" />
     <ClCompile Include="ClientesEspecificacionV01.cpp" />
     <ClCompile Include="ClientesEspecificacionV02.cpp" />
     <ClCompile Include="ColeccionClientesV01.cpp" />
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
     <ClCompile Include="Form1.cpp" />
+    <ClCompile Include="FormListadoGeneral.cpp" />
     <ClCompile Include="IClienteEspecificacion.cpp" />
     <ClCompile Include="IClienteRepository.cpp" />
     <ClCompile Include="IColeccionClientes.cpp" />
@@ -177,6 +183,7 @@
     <ClCompile Include="ListadoMascotas.cpp" />
     <ClCompile Include="Mascota.cpp" />
     <ClCompile Include="MascotaADORespository.cpp" />
+    <ClCompile Include="MenuPrincipal.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -206,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListadoMascotas.resx">
       <DependentUpon>ListadoMascotas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

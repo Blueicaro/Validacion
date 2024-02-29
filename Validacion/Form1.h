@@ -362,7 +362,7 @@ namespace CppCLRWinFormsProject {
 		this->textBoxImporte->Text = "0";
 		this->Validador = (gcnew ClientesEspecificacionV02());
 		this->Coleccion = (gcnew ColeccionClientesV01());
-		this->Repositorio = (gcnew ClienteADORepository());
+		this->Repositorio = (gcnew ClienteADODirectoRepository());
 
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {

@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "IntroMascotas.h"
+#include "MenuPrincipal.h"
 
 using namespace System;
 
@@ -17,6 +18,6 @@ int main()
 {
   Application::EnableVisualStyles();
   Application::SetCompatibleTextRenderingDefault(false);
-  Application::Run(gcnew CppCLRWinFormsProject::IntroMascotas());
+  Application::Run(gcnew CppCLRWinFormsProject::MenuPrincipal());
   return 0;
 }

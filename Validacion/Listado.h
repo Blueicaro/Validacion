@@ -1,5 +1,6 @@
 #pragma once
 #include "ClienteADORepository.h"
+#include "ClienteADODirectoRepository.h"
 namespace Validacion {
 
 	using namespace System;
@@ -83,7 +84,7 @@ namespace Validacion {
 		}
 #pragma endregion
 	private: System::Void Listado_Load(System::Object^ sender, System::EventArgs^ e) {
-		this->Repositorio = (gcnew ClienteADORepository());
+		this->Repositorio = (gcnew ClienteADODirectoRepository());
 		this->dataGridView1->DataSource = this->Repositorio->dameLista();
 	}
 		   

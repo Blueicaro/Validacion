@@ -74,6 +74,12 @@
     <ClInclude Include="ADOBaseRepository.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MenuPrincipal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClienteADODirectoRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -131,6 +137,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ADOBaseRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormListadoGeneral.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuPrincipal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClienteADODirectoRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
